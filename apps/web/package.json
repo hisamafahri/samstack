@@ -1,0 +1,39 @@
+{
+  "name": "@samstack/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "with-env": "dotenv -e ../../.env --",
+    "dev": "yarn with-env next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "clean": "rm -rf .turbo node_modules .next"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^4.29.5",
+    "@trpc/client": "^10.25.0",
+    "@trpc/next": "^10.25.0",
+    "@trpc/react-query": "^10.25.0",
+    "@trpc/server": "^10.25.0",
+    "@samstack/api": "*",
+    "@samstack/ui": "*",
+    "next": "13.4.0",
+    "postcss": "8.4.23",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "3.3.2",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/node": "18.16.3",
+    "@types/react": "18.2.5",
+    "@types/react-dom": "18.2.3",
+    "@samstack/eslint-config": "*",
+    "@samstack/config": "*",
+    "autoprefixer": "10.4.14",
+    "eslint": "*",
+    "eslint-config-next": "13.4.0",
+    "typescript": "*"
+  }
+}

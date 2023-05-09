@@ -1,0 +1,32 @@
+{
+  "name": "@samstack/api",
+  "version": "0.1.0",
+  "description": "API Services with tRPC",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "eslint .",
+    "lint:fix": "pnpm lint --fix",
+    "type-check": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate:pg --schema=./src/db/schema/ --out=./src/db/migrations/"
+  },
+  "dependencies": {
+    "@trpc/client": "^10.25.0",
+    "@trpc/server": "^10.25.0",
+    "drizzle-orm": "^0.25.4",
+    "lucia-auth": "^1.5.0",
+    "pg": "^8.10.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@lucia-auth/adapter-postgresql": "^1.0.0",
+    "@types/pg": "^8.6.6",
+    "@samstack/config": "*",
+    "dotenv-cli": "^7.2.1",
+    "drizzle-kit": "^0.17.6",
+    "eslint": "*",
+    "typescript": "*"
+  }
+}

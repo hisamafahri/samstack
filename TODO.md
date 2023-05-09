@@ -1,0 +1,2 @@
+- `.env` validation
+- `packages/api` path aliases

@@ -1,0 +1,3 @@
+export enum SECURE_STORE_KEY {
+  SESSION_ID = "SESSION_ID",
+}

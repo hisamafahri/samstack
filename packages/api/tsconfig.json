@@ -1,0 +1,9 @@
+{
+  "extends": "@samstack/config/base.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src", "index.ts", "transformer.ts"]
+}
